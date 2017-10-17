@@ -4,7 +4,7 @@ A number of example apps using Rollbar PHP.
 
 ## List of examples
 
-- transformer: setting up a custom transformer which modifies the payload before sending it to Rollbar
+- [transformer](https://github.com/rollbar/rollbar-php-examples/tree/master/transformer): setting up a custom transformer which modifies the payload before sending it to Rollbar
 
 ## Installation
 
