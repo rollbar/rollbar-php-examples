@@ -17,6 +17,6 @@
         "rollbar/rollbar": "*"
     },
     "scripts": {
-        "test": "@php example.php"
+        "test": "export C9_EXAMPLE_VAR=transformer_example && php example.php"
     }
 }
