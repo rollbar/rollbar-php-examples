@@ -13,7 +13,7 @@ information about `C9_` environment variables to all payloads.
 1. Set up `rollbar/rollbar` as a dependency with `composer require rollbar/rollbar`.
 2. Create your transformer class in `src/CustomTransformer.php` which implements `TransformerInterface`.
 3. Implement `transform` method in your `CustomTransformer` with desired business logic. Make sure you return the $payload object from this method.
-4. Set up Rollbar with your `CustomTransformer` class in `example.php`.
+4. Set up Rollbar with your `CustomTransformer` class in `example.php` using `transformer` configuration option.
 5. Run `composer test` and verify that your `C9_` data is being sent to Rollbar.
 
 ## Help / Support
