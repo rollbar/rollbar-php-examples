@@ -1,0 +1,23 @@
+{
+    "name": "rollbar-examples/monolog",
+    "description": "A simple package to demonstrate how to use monolog in a Rollbar PHP app.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Artur Moczulski",
+            "email": "artur.moczulski@gmail.com"
+        }
+    ],
+    "autoload": {
+            "psr-4": {
+            "ExampleVendor\\": "src/"
+        }
+    },
+    "require": {
+        "rollbar/rollbar": "*",
+        "monolog/monolog": "*"
+    },
+    "scripts": {
+        "test": "php example.php"
+    }
+}
