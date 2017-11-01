@@ -9,6 +9,10 @@ Rollbar's invoked logging.
 2. `cp .env.example .env`.
 2. Provide your Rollbar server side access token in `.env`.
 
+## Usage
+1. Either `composer test`.
+2. Or navigate to `/automatic` and `/manual` paths of your example application.
+
 ## Steps used in this example
 
 1. `laravel install simple-logging && cd simple-logging`.
