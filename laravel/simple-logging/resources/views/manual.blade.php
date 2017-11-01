@@ -79,15 +79,18 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Rollbar Laravel
                 </div>
+                
+                <p>
+                    The message <i>This is a manual message reported to Rollbar.</i>
+                    should be delivered to your Rollbar account. Check your
+                    <a href="https://rollbar.com">Rollbar dashboard</a>.
+                </p>
 
                 <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="https://rollbar.com/">Rollbar.com</a>
+                    <a href="https://github.com/rollbar/rollbar-php-laravel">GitHub</a>
                 </div>
             </div>
         </div>

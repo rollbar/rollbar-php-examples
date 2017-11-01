@@ -12,8 +12,17 @@
 */
 
 Route::get('/', function () {
-    
-    throw new \Exception("test exception coming from a Laravel example application");
-    
     return view('welcome');
+});
+
+Route::get('/automatic', function () {
+    
+    throw new \Exception("This exception should be automatically reported to Rollbar.");
+});
+
+Route::get('/manual', function () {
+    
+    \Log::info("This is a manual message reported to Rollbar.");
+    
+    return view('manual');
 });
