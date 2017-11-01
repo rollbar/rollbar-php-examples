@@ -6,7 +6,6 @@ Rollbar's invoked logging.
 
 ## Installation
 1. `composer install`.
-2. `cp .env.example .env`.
 2. Provide your Rollbar server side access token in `.env`.
 
 ## Usage
