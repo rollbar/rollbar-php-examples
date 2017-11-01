@@ -5,6 +5,8 @@ A number of example apps using Rollbar PHP.
 ## List of examples
 
 - [transformer](https://github.com/rollbar/rollbar-php-examples/tree/master/transformer): setting up a custom transformer which modifies the payload before sending it to Rollbar
+- [laravel](https://github.com/rollbar/rollbar-php-examples/tree/master/laravel): all of the Laravel examples are grouped in this directory
+    - [simple-automatic-logging](https://github.com/rollbar/rollbar-php-examples/tree/master/laravel/simple-automatic-logging): this is the most simple, out-of-the-box logging Rollbar provides automatically; in this example an exception is being thrown and reported to Rollbar
 
 ## Installation
 
