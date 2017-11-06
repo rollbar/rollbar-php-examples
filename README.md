@@ -4,6 +4,7 @@ A number of example apps using Rollbar PHP.
 
 ## List of examples
 
+- [custom-data](https://github.com/rollbar/rollbar-php-examples/tree/master/custom-data): saving context data in the custom configuration option
 - [laravel](https://github.com/rollbar/rollbar-php-examples/tree/master/laravel): all of the Laravel examples are grouped in this directory
     - [simple-logging](https://github.com/rollbar/rollbar-php-examples/tree/master/laravel/simple-logging): this is the most simple, out-of-the-box logging Rollbar provides automatically and by manually invoking the log methods
 - [monolog](https://github.com/rollbar/rollbar-php-examples/tree/master/monolog): using Rollbar through Monolog
