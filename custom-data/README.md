@@ -12,7 +12,8 @@ will be attached to all reported messages.
 2. Create the `ExampleDataObject` class to be stored as custom data.
 3. Set up data in a `ExampleDataObject` instance in `example.php`.
 4. Save a reference to the `ExampleDataObject` instance in `RollbarLogger`'s custom data.
-5. Send a message to Rollbar and verify that the the `ExampleDataObject` instance data has been received by Rollbar.
+5. Add custom data to `RollbarLogger` dynamically.
+6. Send a message to Rollbar and verify that the the `ExampleDataObject` instance data has been received by Rollbar.
 
 ## Help / Support
 

@@ -28,6 +28,16 @@ $config = array(
 
 Rollbar::init($config);
 
+/**
+ * 5. Add custom data to `RollbarLogger` dynamically.
+ */
+Rollbar::addCustom("foo", "baz");
+
+/**
+ * 6. Send a message to Rollbar and verify that the the `ExampleDataObject` 
+ * instance data has been received by Rollbar.
+ */
+
 $response = Rollbar::log(
     Level::INFO,
     'This message should have $exampleDataObject\'s data attached.'
