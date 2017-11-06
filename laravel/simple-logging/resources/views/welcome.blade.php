@@ -86,6 +86,10 @@
                     Rollbar Laravel
                 </div>
                 
+                <h2>
+                    Simple Logging
+                </h2>
+                
                 <p>
                     This will show you the most basic use case for Rollbar PHP 
                     Laravel. AutomaticTest shows Rollbar's default automatic 
