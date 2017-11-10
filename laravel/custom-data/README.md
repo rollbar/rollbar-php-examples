@@ -8,7 +8,7 @@ How to add dynamic custom data to Rollbar logs in your Laravel application.
 
 ## Usage
 1. Either `composer test`.
-2. Or navigate to `/welcome`.
+2. Or navigate to `/`.
 3. Verify the custom data is available in the item reported in your Rollbar dashboard.
 
 ## Steps used in this example
@@ -18,7 +18,7 @@ How to add dynamic custom data to Rollbar logs in your Laravel application.
 3. `composer require rollbar/rollbar-laravel`.
 4. Added Rollbar's test server side access token to `.env` under environment variable `ROLLBAR_TOKEN`.
 5. No need to add `RollbarServiceProvider` in `config/app.php` since `rollbar/rollbar-laravel` supports auto-discovery.
-6. Modified route `/welcome` to report custom data to Rollbar.
+6. Modified route `/` to report custom data to Rollbar.
 10. `composer test`.
 
 ## Help / Support
