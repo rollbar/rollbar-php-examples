@@ -25,6 +25,8 @@ Rollbar's invoked logging.
 9. Added `tests/Feature/ManualTest.php`.
 10. Added a route `/context` that throws an exception with custom data which should result in the exception being reported in the Rollbar service.
 11. Added `tests/Feature/ContextTest.php`.
+12. Added `resources/views/automatic.blade.php`.
+12. Added `resources/views/manual.blade.php`.
 12. Added `resources/views/context.blade.php`.
 13. Modified `resources/views/welcome.blade.php`.
 14. `composer test`.
