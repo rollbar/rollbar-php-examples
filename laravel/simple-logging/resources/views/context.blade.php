@@ -20,10 +20,6 @@
                 height: 100vh;
                 margin: 0;
             }
-            
-            ul {
-                text-align: left;
-            }
 
             .full-height {
                 height: 100vh;
@@ -86,28 +82,10 @@
                     Rollbar Laravel
                 </div>
                 
-                <h2>
-                    Simple Logging
-                </h2>
-                
                 <p>
-                    This will show you the most basic use case for Rollbar PHP 
-                    Laravel. AutomaticTest shows Rollbar's default automatic 
-                    error logging. ManualTest shows Rollbar's invoked logging.
-                    
-                    <ul>
-                        <li>
-                            <a href="/automatic">Check automatic logging</a>
-                            <strong>Warning!</strong> This will cause Laravel to
-                            throw an uncaught exception. This is expected.
-                        </li>
-                        <li>
-                            <a href="/manual">Check manual logging</a>
-                        </li>
-                        <li>
-                            <a href="/context">Check context data logging</a>
-                        </li>
-                    </ul>
+                    The message <i>This is a manual message with context data reported to Rollbar.</i>
+                    should be delivered to your Rollbar account with the context data. Check your
+                    <a href="https://rollbar.com">Rollbar dashboard</a>.
                 </p>
 
                 <div class="links">
