@@ -10,7 +10,7 @@ Rollbar's invoked logging.
 
 ## Usage
 1. Either `composer test`.
-2. Or navigate to `/automatic` and `/manual` paths of your example application.
+2. Or navigate to `/automatic`, `/manual` and `/context` paths of your example application.
 
 ## Steps used in this example
 
@@ -23,9 +23,11 @@ Rollbar's invoked logging.
 7. Added `tests/Feature/AutomaticTest.php`.
 8. Added a route `/manual` that throws an exception which should result in the exception being reported in the Rollbar service.
 9. Added `tests/Feature/ManualTest.php`.
-10. Added `resources/views/manual.blade.php`.
-11. Modified `resources/views/welcome.blade.php`.
-10. `composer test`.
+10. Added a route `/context` that throws an exception with custom data which should result in the exception being reported in the Rollbar service.
+11. Added `tests/Feature/ContextTest.php`.
+12. Added `resources/views/context.blade.php`.
+13. Modified `resources/views/welcome.blade.php`.
+14. `composer test`.
 
 ## Help / Support
 
