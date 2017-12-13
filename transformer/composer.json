@@ -14,7 +14,7 @@
         }
     },
     "require": {
-        "rollbar/rollbar": "*"
+        "rollbar/rollbar": "^1"
     },
     "scripts": {
         "test": "export C9_EXAMPLE_VAR=transformer_example && php example.php"
