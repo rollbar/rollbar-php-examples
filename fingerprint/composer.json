@@ -1,0 +1,22 @@
+{
+    "name": "rollbar-examples/fingerprint",
+    "description": "A simple package to sending custom fingerprints to Rollbar API.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Artur Moczulski",
+            "email": "artur.moczulski@gmail.com"
+        }
+    ],
+    "autoload": {
+            "psr-4": {
+            "ExampleVendor\\": "src/"
+        }
+    },
+    "require": {
+        "rollbar/rollbar": "^1"
+    },
+    "scripts": {
+        "test": "php example.php"
+    }
+}
