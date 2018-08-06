@@ -17,6 +17,7 @@ $exampleDataObject->foo = "bar";
 $config = array(
     'access_token' => $_SECRET['access_token'],
     'environment' => 'local',
+    'enabled' => false,
     /**
      * 4. Save a reference to the `ExampleDataObject` instance in 
      * RollbarLogger's custom data.
