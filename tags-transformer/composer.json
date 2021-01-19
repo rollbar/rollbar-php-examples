@@ -1,0 +1,22 @@
+{
+    "name": "rollbar-examples/trasnformer",
+    "description": "A simple package to demonstrate how to use transformers in a Rollbar PHP app.",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Artur Moczulski",
+            "email": "artur.moczulski@gmail.com"
+        }
+    ],
+    "autoload": {
+            "psr-4": {
+            "ExampleVendor\\": "src/"
+        }
+    },
+    "require": {
+        "rollbar/rollbar": "^1"
+    },
+    "scripts": {
+        "test": "export C9_EXAMPLE_VAR=transformer_example && php example.php"
+    }
+}
