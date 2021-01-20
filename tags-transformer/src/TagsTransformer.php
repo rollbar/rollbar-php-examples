@@ -3,7 +3,7 @@
 namespace ExampleVendor;
 
 use Rollbar\TransformerInterface;
-use Rollbar\Utilities;
+use Rollbar\Payload\Data;
 use Rollbar\Payload\Level;
 use Rollbar\Payload\Payload;
 
@@ -48,15 +48,13 @@ class TagsTransformer implements TransformerInterface
          * set the $tags property. See below for more details on how this class is
          * implemented.
          */
-        $newData = new DataWithTags();
+        $newData = new DataWithTags($oldData->getEnvironment(), $oldData->getBody());
         $newData->setTags($tags);
 
         /**
          * Here we set all the properties of the old data in the DataWithTags object. And
          * finally, we set the data of the $payload object we are returning.
          */
-        $newData->setEnvironment($oldData->getEnvironment());
-        $newData->setBody($oldData->getBody());
         $newData->setLevel($oldData->getLevel());
         $newData->setTimestamp($oldData->getTimestamp());
         $newData->setCodeVersion($oldData->getCodeVersion());
@@ -86,9 +84,9 @@ class TagsTransformer implements TransformerInterface
  * In order for us to set a new root level attribute in the payload data, we have to create
  * our own data class here.
  */
-class DataWithTags extends Payload\Data
+class DataWithTags extends Data
 {
-    private $tags = null;
+    private $tags;
 
     public function getTags()
     {
@@ -97,7 +95,7 @@ class DataWithTags extends Payload\Data
 
     public function setTags(array $tags)
     {
-        $this->featureFlags = $flags;
+        $this->tags = $tags;
         return $this;
     }
 
@@ -123,7 +121,7 @@ class DataWithTags extends Payload\Data
             "notifier" => $this->notifier,
             "tags" => $this->tags,
         );
-        $objectHashes = Utilities::getObjectHashes();
+        $objectHashes = \Rollbar\Utilities::getObjectHashes();
         return $this->utilities->serializeForRollbar($result, null, $objectHashes);
     }
 }
