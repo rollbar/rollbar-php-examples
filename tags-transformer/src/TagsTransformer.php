@@ -122,6 +122,6 @@ class DataWithTags extends Data
             "tags" => $this->tags,
         );
         $objectHashes = \Rollbar\Utilities::getObjectHashes();
-        return $this->utilities->serializeForRollbar($result, null, $objectHashes);
+        return \Rollbar\Utilities::serializeForRollbar($result, null, $objectHashes);
     }
 }
