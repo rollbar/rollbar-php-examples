@@ -21,8 +21,8 @@ $response = Rollbar::log(
     Level::INFO,
     'test',
     /**
-     * 5. Send the launchdarkly information as extra data in the log call. The
-     * key here should match that of your transformer.
+     * Send the launchdarkly information as extra data in the log call. The
+     * key `feature_flag_key` here should match that of your transformer.
      */
     array('feature_flag_key' => 'YOUR_FEATURE_FLAG'),
 );

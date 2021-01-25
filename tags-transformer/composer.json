@@ -1,11 +1,15 @@
 {
-    "name": "rollbar-examples/trasnformer",
-    "description": "A simple package to demonstrate how to use transformers in a Rollbar PHP app.",
+    "name": "rollbar-examples/tag-transformer",
+    "description": "A simple package to demonstrate how to use the transformer in a Rollbar PHP app to move extra data to the tags object in the payload.",
     "type": "project",
     "authors": [
         {
             "name": "Artur Moczulski",
             "email": "artur.moczulski@gmail.com"
+        },
+        {
+            "name": "Anthony Tran",
+            "email": "atran@rollbar.com"
         }
     ],
     "autoload": {
