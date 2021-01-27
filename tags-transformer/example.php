@@ -7,7 +7,7 @@ use Rollbar\Rollbar;
 use Rollbar\Payload\Level;
 
 $config = array(
-    'access_token' => $_SECRET['access_token'],
+    'access_token' => $_ENV['ROLLBAR_TOKEN'],
     'environment' => 'local',
     /**
      * 4. Set up Rollbar with your `TagsTransformer` class in `example.php`.
